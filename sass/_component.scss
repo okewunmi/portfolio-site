@@ -1,0 +1,144 @@
+.container {
+  border-radius: 1rem;
+  max-width: 115rem;
+  margin: 7rem auto;
+  background-color:  var(--color-black);
+  // background-color: var(--color-primary);
+
+  color: var(--color-grey-light-3);
+  box-shadow: --show-dark;
+  height: 50rem; 
+
+  @media only screen and (max-width: 75em) {}}
+  
+  /////// content/////
+
+ .content{
+  display: flex;
+  margin-top:9rem;
+  justify-content: space-between;
+ }
+
+ ////// side-bar//////
+ .sidebar{
+ flex:0 0 17% ;
+ color: var(--color-grey-light-4);
+ background-color: rgba(0, 0, 0, 0.973);
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ margin-right: 3rem;
+ 
+}
+.sidebar-2{
+  flex:0 0 12%;
+  // justify-self:right;
+  justify-self:center;
+  color: var(--color-grey-light-4);
+//  background-color: var(--color-extra-4);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  justify-items: center;
+  
+  
+  &-nav{
+    margin-top: 3.5rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-grey-light-4);
+    border-left: 2px solid black;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    &__item{
+      //text-align: center;
+      position: relative;
+      
+      &:not(:last-child){
+        margin-bottom: 2.2rem;
+      }
+
+      }
+    }
+  }
+   
+
+///////// side-nav//////
+.side-nav{
+
+  font-size: 1.2rem;
+  list-style: none;
+  margin-top: 3.5rem;
+  
+  &__item{
+   position: relative;
+
+   &:not(:last-child){
+     margin-bottom: .6rem;
+   }
+  }
+ &__icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 2.5rem;
+  fill:  var(--color-grey-light-4);
+ }
+
+  &__item::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 3px;
+   height: 100%;
+  //  background-color: var(--color-extra-4);
+   background-color: var(--color-extra-2);
+   transform: scaleY(0);
+   transition: transform .2s,
+               width .4s cubic-bezier(1,0,0,1) .2s,
+               background-color .1s ;
+   //position: absolute;
+ }
+ &__item:hover::before,
+ &__item--active::before{
+   transform: scaleY(1);
+   width: 100%;
+ }
+ &__item:active::before{
+   background-color: var( --magic-mint);
+
+ }
+ &__link:link,
+  &__link:visited{
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.2rem 2.4rem;
+    display: block;
+    position: relative;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+
+}
+}
+/////// legal ////
+
+
+// styling the second side nav bar when click on the first side nav
+
+.customise{
+  width: 25px;
+  border-top: 2px solid var(--color-grey-light-4);
+  border-bottom: 2px solid var(--color-grey-light-4);
+}
+
+
+  
+

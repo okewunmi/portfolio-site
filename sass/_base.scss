@@ -1,0 +1,73 @@
+
+ :root {
+   --color-black:#000;
+  --color-primary: #5c6527;
+  --color-primary-light:#7d8a35;
+  --color-primary-dark:#2a2e12;
+  --color-grey-light-1:#faf9f9;
+  --color-grey-light-2:#f4f2f2;
+  --color-grey-light-3:#cfcfcf;
+  --color-grey-light-4:rgb(187, 187, 187);
+  --color-grey-dark-1:#333;
+  --color-grey-dark-2:#777;
+  --color-grey-dark-3:#999;
+  --color-extra-1:#282053;
+  --color-extra-2:#8807ce;
+  --color-extra-3:#6c782e;
+  --color-extra-4:#7d8a35;
+
+  --kombu-green: #3c493fff;
+  --xanadu: #7e8d85ff;
+  --ash-gray: #b3bfb8ff;
+  --mint-cream: #f0f7f4ff;
+  --magic-mint: #a2e3c4ff;
+
+--dark-purple: rgba(33, 1, 36, 1);
+--claret: rgba(117, 13, 55, 1);
+--turquoise-green: rgba(179, 222, 193, 1);
+--light-cyan: rgba(219, 249, 240, 1);
+--baby-powder: rgba(247, 249, 247, 1);
+
+  --gradient-top1: linear-gradient(45deg, #210124ff, #750d37ff, rgb(125, 177, 142), rgb(168, 255, 229), #750d37ff);
+  --gradient-top: linear-gradient(0deg, #3c493fff, #7e8d85ff, #b3bfb8ff, #f0f7f4ff, #a2e3c4ff);
+  --gradient-right: linear-gradient(90deg, #3c493fff, #7e8d85ff, #b3bfb8ff, #f0f7f4ff, #a2e3c4ff);
+  --gradient-bottom: linear-gradient(180deg, #3c493fff, #7e8d85ff, #b3bfb8ff, #f0f7f4ff, #a2e3c4ff);
+  --gradient-left: linear-gradient(270deg, #3c493fff, #7e8d85ff, #b3bfb8ff, #f0f7f4ff, #a2e3c4ff);
+  --gradient-top-right: linear-gradient(45deg, #3c493fff, #7e8d85ff, #b3bfb8ff, #f0f7f4ff, #a2e3c4ff);
+  --gradient-bottom-right: linear-gradient(135deg, #3c493fff, #7e8d85ff, #b3bfb8ff, #f0f7f4ff, #a2e3c4ff);
+  --gradient-top-left: linear-gradient(225deg, #3c493fff, #7e8d85ff, #b3bfb8ff, #f0f7f4ff, #a2e3c4ff);
+  --gradient-bottom-left: linear-gradient(315deg, #3c493fff, #7e8d85ff, #b3bfb8ff, #f0f7f4ff, #a2e3c4ff);
+  --gradient-radial: radial-gradient(#3c493fff, #7e8d85ff, #b3bfb8ff, #f0f7f4ff, #a2e3c4ff);
+ 
+  --show-dark:var(0 2rem 6rem rgba(0,0,0,.3)) ;
+}
+  
+ 
+ * {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+
+ body {
+  font-family: 'open sans',sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  
+  background-image: var(--gradient-top1);
+  // background-image: linear-gradient(to right bottom, var(--turquoise-green), var(--claret));
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 89vh; 
+}

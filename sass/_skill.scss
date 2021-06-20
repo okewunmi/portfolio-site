@@ -1,0 +1,22 @@
+.skill{
+
+ &-story{
+
+  &__heading{
+   text-transform: uppercase;
+   color: var(--color-black);
+   font-size: 2rem;
+   margin-bottom: 1.6rem;
+
+  }
+  &__paragraph{
+   font-size: 1.7rem;
+   line-height: 2;
+   font-family: roboto;
+ 
+ 
+  }
+
+ }
+ 
+}
